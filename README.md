@@ -61,5 +61,6 @@ while True:
 -------------------------------------------
 
 UML Sequence Diagram:
+
 <img width="631" alt="Screenshot 2023-07-31 at 6 02 43 PM" src="https://github.com/Ben-Romaine/AvgDateMicroservice/assets/107928674/c1eac705-2e5e-42c3-8650-2ea80180d35c">
 
