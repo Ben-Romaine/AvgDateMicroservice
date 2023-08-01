@@ -1,6 +1,6 @@
 # AvgDateMicroservice
 
-This Average Date Microservice uses Python and takes a list of dates given in the format of "day-month-year"
+This Average Date Microservice uses Python and takes a list of dates given in the format of "month-day-year"
 and returns the average number of days between those dates. 
 
 ZeroMQ is used for the messenger between the Client and the Server. The Pyzmq package, which is the Python version
