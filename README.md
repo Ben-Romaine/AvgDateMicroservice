@@ -8,10 +8,11 @@ of ZeroMQ is easily downloaded by following the directions at https://zeromq.org
 
 An example Client Side Call with a sample list of dates would look like:
 ------------------------------
+```
 import zmq
 
 def average_days_between_dates_client(dates_list):
-    context = zmq.Context()
+context = zmq.Context()
     socket = context.socket(zmq.REQ)
     socket.connect("tcp://localhost:5555")
 
@@ -26,12 +27,12 @@ def average_days_between_dates_client(dates_list):
 dates = ['07-03-2023', '07-13-2023', '07-18-2023', '07-24-2023', '08-02-2023']
 result = average_days_between_dates_client(dates)
 print(f"The average number of days until your next task is: {result} days")
-
+```
 ---------------------------------
 
 An example of the Server Side Code:
 ----------------------------------
-
+```
 import zmq
 from datetime import datetime
 
@@ -56,7 +57,7 @@ while True:
     print("Sending back average days.")
     result = average_days_between_dates(dates_list)
     socket.send_pyobj(result)
-
+```
 -------------------------------------------
 
 UML Sequence Diagram:
